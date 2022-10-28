@@ -7,10 +7,10 @@
 
 ::root{
   --inter: "" ,
+  --gray: yellow,
 }
 
 .container {
-  border:1px solid black;
   margin:0 auto;
   width:80%;
 }
@@ -37,11 +37,29 @@
 }
 
 #avatar{
-  border:1px solid black;
   width:50%;
   margin:0 auto;
   display:flex;
   flex-direction:column;
   align-items:center;
   position:relative;
+}
+
+.links_ar_container{
+  display:grid;
+  grid-row-gap:24px;
+}
+
+.links_ar_container a{
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  padding:24px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color:var(--gray);
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
 }
