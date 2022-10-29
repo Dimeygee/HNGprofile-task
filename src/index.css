@@ -7,8 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+@font-face{
+  font-family:"Inter";
+  font-display: swap;
+  src:url('./components/Inter/static/Inter-Regular.ttf');
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Inter, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 

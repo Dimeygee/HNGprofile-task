@@ -5,9 +5,9 @@
 }
 
 
-::root{
-  --inter: "" ,
-  --gray: yellow,
+:root{
+  --gray: #101828;
+  --lightgrey: #667085;
 }
 
 .container {
@@ -16,19 +16,75 @@
 }
 
 #profile__img{
-  background-image:url("../public/assets/profile__img.png");
-  background-repeat:non-repeat;
+  background-image:url("./components/assets/profile__img.png");
+  background-repeat:no-repeat;
   background-position:center center;
   width:88px;
   height:88px;
   border-radius:100%;
 }
 
+.footer_logo_1{
+  width:185px;
+  height:24px;
+}
+
+.header_main{
+  padding:0 32px;
+}
+
+.footer_line{
+  border-bottom:1px solid #EAECF0;
+  padding-top:48px;
+
+}
+
+
 #avatar p {
   padding:24px 0 56px 0;
   font-weight: 700;
   font-size: 20px;
-  font-family :var(--inter);
+  font-family :Inter;
+  color:var(--gray);
+}
+
+.icon_container{
+  width:24px;
+  height:24px;
+}
+
+.footer_logo_1_container{
+  display:flex;
+  align-items:flex-end;
+}
+
+.footer__logo_1{
+  width:185px;
+  height:24px;
+}
+
+.footer__logo_2{
+  width:132px;
+  height:32px;
+}
+
+.footer{
+  display:flex;
+  padding-top:48px;
+  justify-content:space-between;
+}
+
+.footer_para{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--lightgrey);
+  line-height:34px;
+  font-family:Inter;
+}
+
+.icon_container img{
+  display:block;
+  width:100%;
 }
 
 .inner_container{
@@ -37,12 +93,25 @@
 }
 
 #avatar{
-  width:50%;
+  width:65%;
   margin:0 auto;
   display:flex;
   flex-direction:column;
   align-items:center;
   position:relative;
+}
+
+#avatar::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:-18px;
+    background-image:url("./components/assets/sharebtndesktop.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    width:40px;
+    height:40px;
+    background-size:contain;
 }
 
 .links_ar_container{
@@ -59,7 +128,51 @@
   font-weight: 500;
   font-size: 18px;
   color:var(--gray);
-  background: #EAECF0;
+  background-color: #EAECF0;
   border: 1px solid #EAECF0;
   border-radius: 8px;
+}
+
+
+@media screen and (max-width:540px){
+
+    #avatar{
+      width:100%;
+    }
+
+    .container{
+      width:90%;
+    }
+
+    .header_main{
+      padding:0;
+    }  
+
+    #avatar::after{
+      background-image:url("./components/assets/sharebtnmobile.png");
+  }
+
+  .footer{
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .footer_logo_1{
+    width:140px;
+    height:24px;
+  }
+
+  .footer_para, .links_ar_container a{
+    font-size:14px;
+  }
+
+  .footer__logo_2{
+    width:99px;
+    height:24px;
+  }
+
+  #avatar p{
+    font-size:18px;
+  }
+
 }

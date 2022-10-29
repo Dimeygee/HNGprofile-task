@@ -1,10 +1,10 @@
 
 
 export const LinksArray = [
-    {id: 1, name: "Twitter Link", href: "https"},
-    {id: 2, name: "Zuri Team", href: ""},
-    {id: 3, name: "Zuri Books", href: ""},
-    {id: 4, name: "Python Books", href: ""},
-    {id: 5, name: "Background Check for Coders", href: ""},
-    {id: 5, name: "Design Books", href: ""},
+    {id: "btn__twitter", name: "Twitter Link", href: "https://twitter.com/"},
+    {id: "btn__zuri", name: "Zuri Team", href: "https://training.zuri.team/"},
+    {id: "books", name: "Zuri Books", href: "https://books.zuri.team/"},
+    {id: "book__python", name: "Python Books", href: "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>"},
+    {id:"pitch", name: "Background Check for Coders", href: "https://background.zuri.team"},
+    {id: "book_design", name: "Design Books", href: "https://books.zuri.team/design-rules"},
 ]

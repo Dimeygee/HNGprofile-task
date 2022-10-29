@@ -5,7 +5,7 @@ export const  Avatar = () => {
     return (
         <div id="avatar">
             <div id="profile__img" ></div>
-            <p>Annette Black</p>
+            <p id="twitter">D_normal_1</p>
         </div>
     )
 
