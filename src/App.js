@@ -18,7 +18,7 @@ function App() {
               <div className="links_ar_container">
                 {LinksArray.map(link => {
                   return (
-                    <a key={link.id} href={link.href} id={link.id} title={link?.title}>{link.name}</a>
+                    <a key={link.id} href={link.href} id={link.id} title={link?.title} target="_blank">{link.name}</a>
                   )
                 })}
               </div>
