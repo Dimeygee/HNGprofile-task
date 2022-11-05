@@ -24,7 +24,7 @@ export const Contact = () => {
                     </div>
                     <div className="agreement">
                         <input type="checkbox" />
-                        <span>You agree to providing your data to user who may contact you.</span>
+                        <span>You agree to providing your data to D_normal_1 who may contact you.</span>
                     </div>
                     <button id="btn__submit">Send message</button>
                 </form>
