@@ -7,4 +7,5 @@ export const LinksArray = [
     {id: "book__python", name: "Python Books", href: "https://books.zuri.team/python-for-beginners?ref_id=<Adeyemi Oladimeji>"},
     {id:"pitch", name: "Background Check for Coders", href: "https://background.zuri.team", title: "Want to know about the coders ? click here."},
     {id: "book_design", name: "Design Books", href: "https://books.zuri.team/design-rules", title: "click here to pitch the free design book offered by Zuri."},
+    {id: "contact", name: "Contact Me", href: "/contact",},
 ]
