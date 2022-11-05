@@ -4,6 +4,7 @@ import slack from "../components/assets/slack.png"
 import github from "../components/assets/github.png"
 import { Icon } from '../components/icon';
 import { Footer } from "../components/footer";
+import { Link } from "react-router-dom"
 
 
 export const Profile = () => {
@@ -15,7 +16,7 @@ export const Profile = () => {
               <div className="links_ar_container">
                 {LinksArray.map(link => {
                   return link.id === 'contact' ? (
-                    <a key={link.id} href={link.href} id={link.id} title={link?.title}>{link.name}</a>
+                    <Link key={link.id} to={link.href} id={link.id} title={link?.title}>{link.name}</Link>
                   ) : (
                     <a key={link.id} href={link.href} id={link.id} title={link?.title} target="_blank">{link.name}</a>
                   )
