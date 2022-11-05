@@ -17,7 +17,7 @@ export const Contact = () => {
                         <Input id="last_name" placeholder="Enter your last name" type="text" label="Last name" />
                     </div>
                     <div className="form_control_2">
-                        <Input id="email" placeholder="yourname@email.com" type="text" label="Email" />
+                        <Input id="email" placeholder="yourname@email.com" type="email" label="Email" />
                     </div>
                     <div className="form_control_3">
                         <Textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible..."  label="Message" />
