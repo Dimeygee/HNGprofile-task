@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes , Route } from "react-router-dom"
-//import { Contact } from './pages/contact';
+import { Contact } from './pages/contact';
 import { Profile } from './pages/profile';
 
 
@@ -12,6 +12,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/"  element={<Profile />} />
+            <Route path="/contact"  element={<Contact />} />
           </Routes>
         </BrowserRouter>
       </div>
